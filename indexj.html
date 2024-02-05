@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jagan imp-exp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="styleindex.css"> -->
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    position: sticky;
+    z-index: 2;
+
+
+}
+.navbar{
+    background-color:rgb(14, 13, 13);
+    width:100%;
+    height: 90px;
+    display: flex;
+
+
+}
+
+.name{
+    color: white;
+    margin-left: 5px;
+    font-style:italic;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.work{
+    color: #c7ae0a;
+    margin-left: 40px;
+
+}
+.nav-location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+
+
+}
+.location-icon{
+    display: flex;
+    margin-left: 30px;
+}
+.location{
+    color: white;
+    margin-left: 5px;
+}
+.traandord{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+
+}
+
+.input{
+    width: 400px;
+    height: 1.8rem;
+    margin-left: 10px;
+}
+.menu{
+    align-items:center;
+    display:flex;
+    margin-left: 960px;
+
+}
+
+.nav-menu{
+    background-color: white;
+    width: 2.2rem;
+    height: 2.2rem;
+    justify-content:center;        
+    align-items: center;
+    display: flex;
+    border-radius: 2px;
+    margin-right: 15px;
+}
+.border{
+    border: 1px solid transparent;
+}
+.border:hover{
+    border: 1px solid white;
+    margin-top: 1px;
+    width: 80px;
+    height: 85px;
+}
+.nav-panel{
+    background-color: lightslategray;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+
+}
+ul{
+    display: flex;
+    margin-left: 30px;
+    list-style: none;
+
+}
+a{
+    margin-left: 20px;
+    font-size: large;
+    color: black;
+    text-decoration: none;
+
+
+}
+.train1{
+    width: 90vw;
+    height: 45vh;
+}
+.background{
+    height:50vh;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+.train{
+    display: block;
+    justify-content: center;
+
+}
+h2{
+    font-weight: 900;
+    margin-left: 30px;
+    font-size: xx-large;
+}
+h5{
+    color: gray;
+    margin-left: 30px;
+
+}
+.keypoint{
+    margin-top: 10px;
+    background-color: lightyellow;
+
+}
+.box{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    background-color: transparent;
+    
+}
+.box1{
+    width:23%;
+    height: 30vh;
+    border: 1px solid transparent;
+    margin-left: 20px;
+
+}
+.box2{
+    width:23%;
+    height: 30vh;
+    border: 1px solid transparent;
+
+}
+.box3{
+    width:23%;
+    height: 30vh;
+    border: 1px solid transparent;
+
+}
+.box4{
+    width:23%;
+    height: 30vh;
+    border: 1px solid transparent;
+    margin-right: 20px;
+
+}
+
+.keyword2{
+    margin-left: 20px;
+    font-size: large;
+    font-weight: 900;
+}
+.keyword1{
+    font-size: large;
+    font-weight: 900;
+}
+.border1{
+    border: 1px solid transparent;
+}
+.border1:hover{
+    border: 2px solid burlywood;
+    width: 23%;
+    height: 30vh;
+   
+}
+.paragraph{
+margin-top: 15px;
+margin-left: 30px;
+margin-right: 30px;
+
+
+}
+.boxes{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+.boxline1{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100vw;
+    height: 65vh;
+
+}
+.boxes1{
+    width: 31%;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.m{
+    border-radius: 15px;
+    width:100%;
+    height:50vh; 
+}
+.p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: 900;
+    margin-top: 10px;
+}
+.footer{
+    width: 100%;
+    height: 13vh;
+    background-color:#232f3e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+@media screen  and (max-width:1000px){
+
+    .border:hover{
+    border: 1px solid white;
+    margin-top: 1px;
+    width: 80px;
+    height: 85px;
+}
+    .boxes{
+    display: flex;
+    justify-content:space-evenly;
+    height: 55vh;
+    flex-direction: column;
+}
+
+.boxline1{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100vw;
+    height: 30vh;
+
+}
+
+.boxes1{
+    width: 25vw;
+    height: 15vh;
+}
+
+.p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-weight: 900;
+    margin-left: 30px;
+}
+.paragraph{
+margin-top: 14px;
+margin-left: 40px;
+margin-right: 30px;
+margin-bottom: 14px;
+}
+
+
+.m{
+    width:100%;
+    height:15vh; 
+}
+
+.keyword2 p{
+    font-size:small;
+    margin-left: 10px;
+
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.keyword1 p{
+    font-size: small;
+    font-weight: 900;
+}
+
+.footer{
+    width: 100%;
+    height: 13vh;
+    background-color:#232f3e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.keyword2{
+    margin-right: 100rem;
+    font-size: medium;
+    font-weight: 900;
+}
+
+.keyword1{
+    font-size:medium;
+    font-weight: 900;
+}
+
+.box{
+    display: flex;
+    justify-content:space-evenly;
+    width: 65vw;
+    height: 14vh;
+    margin-left: 3.9rem;
+}
+.k1{
+    display: flex;
+    justify-content:center;
+    width: 13vw;
+    height: 7vh;
+    margin-right: 50px;
+}
+.background{
+    height: 31.5vh;
+}
+.train1{
+    height: 30vh;
+}
+.box1 {
+    margin-right: 20px;
+}
+.navbar{
+    display:flex;
+
+}.nav-logo {
+margin-left: 7vw;
+}
+.name{
+margin-left: 10vw;
+
+}
+.nav-location{
+margin-left: 10vw;
+
+}
+
+
+}
+
+
+
+
+    </style>
+
+</head>
+<body>
+   <header>
+    <nav>
+        <div class="navbar">
+        <div class="nav-logo border">
+            <img src="jag.png" alt="" width="80px" height="80px">
+        </div>
+        <div class="name">
+            <h1>jagan</h1>
+            <div class="work">EX-IM</div>
+        </div>
+        <div class="nav-location ">
+            <div class="location-icon">
+            <i class="fa-solid fa-location-dot" style="color: #c7ae0a;"></i>
+            <div class="location">india</div>
+        </div>
+        </div>
+
+
+        <div class="menu ">
+        <div class="nav-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    </div>
+</nav>
+   <div class="nav-panel">
+    <ul>
+        <a href="indexj.html">home</a>
+        <a href="about us.html">about us</a>
+        <a href="product.html">product</a>
+        <a href="us.html">contact us</a>
+
+    </ul>
+</div>
+
+</header>
+
+
+    <div class="background">
+        <div class="train">
+            <img class="train1" src="train.jpg" >
+        </div>
+    </div>
+   
+    <div class="container">
+        <div class="keypoint">
+            <h5>JAGAN INTERNATIONAL</h5>
+            <h2>key point</h2>
+        </div>
+        <div class="box">
+    <div class="box1 "><img class="k1" src="k1.jpg">
+    <div class="keyword1"><p>business tranparency</p></div>
+
+    </div>
+
+    
+        <div class="box1 "><img class="k1"src="k2.jpg" alt="">
+    <div class="keyword2"><p>Quality assurance</p></div>
+
+        
+        </div>
+        <div class="box1 "><img class="k1" src="k3.jpg" alt="">
+    <div class="keyword2"><p>business Ethics</p></div>
+
+        </div>
+        <div class="box1 "><img class="k1" src="k4.jpg" alt="">
+    <div class="keyword1"><p> consistency & reliability</p></div>
+</div>
+    </div>
+    <div class="keypoint">
+        <h5>WHO WE ARE</h5>
+        <h2>About us</h2>
+    </div>
+    <div class="paragraph">JAGAN INTERNATIONAL is a conglomerate operating in various different industries such as Mineral, Agriculture and Handicrafts.
+        We maintain a long list of clientele based in all over india and this list keeps increasing on.
+    </div> 
+    <div class="keypoint">
+        <h5>WHAT WE DO</h5>
+        <h2>Our product</h2>
+
+    </div>
+    <div class="boxes">
+        <div class="boxline1">
+
+        <div class="boxes1"> 
+            
+           <a href="agriculturepro.html"><img class="m" src="m1.jpg" ></a>
+       <div class="p"><p>Agriculture product</p></div> 
+    </div>
+    <div class="boxes1">
+        <a href="handicraft.html"><img class="m" src="m2.jpg" ></a>
+
+        <div class="p"> <p>Handicraft</p></div> 
+</div>
+<div class="boxes1">
+
+    <a href="beauty item.html"><img class="m" src="m3.jpg" ></a>
+
+    <div class="p"><p>Beauty product</p></div> 
+</div>
+    </div>
+    <div class="boxline1">
+
+        <div class="boxes1">
+    <a href="electronics parts.html"><img class="m" src="m4.jpg"  ></a>
+            <div class="p"><p>Electric item</p></div> 
+    </div>
+
+    <div class="boxes1">
+        <a href="kitchen wear.html"><img class="m" src="m5.webp"  ></a>
+
+    <div class="p"><p>Kitchen ware</p></div> 
+
+
+</div>
+<div class="boxes1">
+    <a href="row material.html"><img class="m" src="m6.png"  ></a>
+    <div class="p"><p>Other row material</p></div> 
+</div>
+    </div>
+    </div>
+
+    <div class="footer">
+        <p>Jagan international .@2023.All Right Reserved</p>
+    </div>
+</body>
+</html>
